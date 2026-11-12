@@ -1,0 +1,15 @@
+.recovery-tools/
+phone-backup/
+__pycache__/
+node_modules/
+artifacts/
+android-decompiled/
+.local-release/
+.env
+.env.*
+*.keystore
+*.jks
+*.apk
+*.aab
+*.log
+integrations/staged/

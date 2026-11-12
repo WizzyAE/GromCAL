@@ -1,0 +1,13 @@
+.gromcal-news-backdrop { position: fixed; inset: 0; z-index: 1500; display: grid; place-items: center; padding: max(18px, env(safe-area-inset-top)) 18px max(18px, env(safe-area-inset-bottom)); background: #0009; backdrop-filter: blur(8px); }
+.gromcal-news { position: relative; box-sizing: border-box; width: min(100%, 430px); max-height: 90dvh; overflow-y: auto; border: 1px solid #ffffff1f; border-radius: 26px; padding: 30px; background: #141414; color: #fff; box-shadow: 0 24px 90px #0008; font-family: Inter, -apple-system, system-ui, sans-serif; text-align: left; }
+.gromcal-news .gromcal-news-close { position: absolute; top: 12px; right: 12px; width: 36px; height: 36px; border: 0; border-radius: 50%; background: #ffffff0d; color: #bbb; font-size: 25px; cursor: pointer; }
+.gromcal-news-icon { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 16px; background: #ffd60a; font-size: 30px; color: #000; }
+.gromcal-news .gromcal-news-eyebrow { margin: 22px 0 7px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; color: #ffd60a; }
+.gromcal-news h2 { margin: 0 0 12px; font-size: clamp(25px, 7vw, 32px); line-height: 1.15; letter-spacing: -.8px; color: #fff; }
+.gromcal-news p { margin: 0; font-size: 14px; line-height: 1.65; color: #b8b8be; }
+.gromcal-news-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.gromcal-news-actions a, .gromcal-news-actions button { box-sizing: border-box; flex: 1 1 120px; display: flex; justify-content: center; align-items: center; min-height: 48px; padding: 12px 18px; border: 0; border-radius: 14px; font: inherit; font-size: 14px; font-weight: 750; text-decoration: none; cursor: pointer; }
+.gromcal-news-actions a { background: #ffd60a; color: #000; }
+.gromcal-news-actions button { background: #ffffff10; color: #fff; }
+.gromcal-news :is(a, button):focus-visible { outline: 3px solid #ffd60a; outline-offset: 4px; }
+@media (max-width: 360px) { .gromcal-news { padding: 26px 22px; } }

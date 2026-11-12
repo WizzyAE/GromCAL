@@ -1,0 +1,16 @@
+{
+  "name": "gromcal-recovered",
+  "version": "1.2.0",
+  "private": true,
+  "description": "Recovered GromCAL mobile app with maintained training UI patches",
+  "scripts": {
+    "build": "node scripts/build-training-ui.mjs",
+    "dev": "python -m http.server 5173 --bind 127.0.0.1 --directory dist",
+    "test": "node tests/api-setup.cjs && node tests/training-ui.cjs && node scripts/check-public-files.mjs",
+    "test:announcements": "node tests/announcements.cjs",
+    "check:public": "node scripts/check-public-files.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.65.0"
+  }
+}

@@ -1,0 +1,31 @@
+/* Keep intrinsic text widths from expanding mobile training cards. */
+.training-screen .card,
+.training-screen .grid3 > *,
+.training-consumption,
+.training-exercise-row { min-width: 0; }
+.training-screen .grid3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.training-screen .mini b { overflow-wrap: anywhere; }
+.training-screen .list-item .grow { overflow-wrap: anywhere; }
+.training-screen .meal-head { flex-wrap: wrap; }
+.training-screen .meal-head .grow { min-width: 0; flex: 1 1 90px; overflow-wrap: anywhere; }
+.training-summary .row > div:last-child { min-width: 0; overflow-wrap: anywhere; }
+.training-summary .row > div:first-child .num { font-size: 24px !important; overflow-wrap: anywhere; }
+.training-total { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 6px; font-size: 34px; font-weight: 800; letter-spacing: -1.2px; margin: 4px 0 12px; overflow-wrap: anywhere; }
+.training-total > .sub { font-size: 15px; font-weight: 600; letter-spacing: normal; }
+.training-stacked-bar { height: 14px; }
+.training-consumption .hbar > i { flex-shrink: 0; }
+.training-goal-marker { position: absolute; top: -4px; bottom: -4px; width: 2px; border-radius: 2px; background: var(--y); }
+.training-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 10px; font-size: 12px; color: var(--t2); }
+.training-legend > span { min-width: 0; overflow-wrap: anywhere; }
+.training-legend i { display: inline-block; width: 8px; height: 8px; border-radius: 4px; margin-right: 6px; }
+.training-exercise-chart { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; margin-top: 16px; max-height: min(360px, 50vh); overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--t3) transparent; padding-right: 4px; }
+.training-exercise-chart:focus-visible { outline: 2px solid var(--y); outline-offset: 4px; border-radius: 4px; }
+.training-exercise-label { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 10px; font-size: 13px; margin-bottom: 5px; }
+.training-exercise-label > :first-child { min-width: 0; overflow-wrap: anywhere; }
+.training-exercise-label > .num { color: var(--t2); white-space: nowrap; }
+.training-exercise-row > .hbar { height: 6px; }
+@media (max-width: 360px) {
+  .training-summary > .row { gap: 12px !important; }
+  .training-screen .mini { padding-left: 6px; padding-right: 6px; }
+  .training-screen .mini b { font-size: 15px; }
+}

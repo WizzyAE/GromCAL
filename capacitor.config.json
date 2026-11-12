@@ -1,0 +1,19 @@
+{
+	"appId": "com.grom.gromcel",
+	"appName": "GromCAL",
+	"webDir": "dist",
+	"backgroundColor": "#000000",
+	"android": {
+		"backgroundColor": "#000000"
+	},
+	"plugins": {
+		"StatusBar": {
+			"style": "DARK",
+			"backgroundColor": "#000000",
+			"overlaysWebView": false
+		},
+		"Keyboard": {
+			"resize": "body"
+		}
+	}
+}
